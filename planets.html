@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destiny - O Destino Final</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="./css/planets.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand cyber-font neon-title" href="./index.html">DESTINY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="space.html">ESPAÇO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cyber-link active" href="./planets.html">PLANETAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="teorias.html">TEORIAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">SOBRE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container animate__animated animate__fadeIn">
+    <section id="planets-section">
+      <h2>EXPLORE OS PLANETAS</h2>
+      <div class="planet-grid">
+        <div class="planet" id="Mercúrio" data-bs-toggle="modal" data-bs-target="#planetModal">
+          <img src="./img/mercurio.jpeg" alt="Mercúrio">
+          <div class="planet-name">Mercúrio</div>
+        </div>
+        <div class="planet" id="Vênus" data-bs-toggle="modal" data-bs-target="#planetModal">
+          <img src="./img/venus.jpg" alt="Vênus">
+          <div class="planet-name">Vênus</div>
+        </div>
+        <div class="planet" id="Terra" data-bs-toggle="modal" data-bs-target="#planetModal">
+          <img src="./img/terra.jpeg" alt="Terra">
+          <div class="planet-name">Terra</div>
+        </div>
+        <div class="planet" id="Marte" data-bs-toggle="modal" data-bs-target="#planetModal">
+          <img src="./img/marte.png" alt="Marte">
+          <div class="planet-name">Marte</div>
+        </div>
+        <div class="planet" id="Júpiter" data-bs-toggle="modal" data-bs-target="#planetModal">
+          <img src="./img/Jupiter.jpg" alt="Júpiter">
+          <div class="planet-name">Júpiter</div>
+        </div>
+        <div class="planet" id="Saturno" data-bs-toggle="modal" data-bs-target="#planetModal">
+          <img src="./img/saturn.jpg" alt="Saturno">
+          <div class="planet-name">Saturno</div>
+        </div>
+        <div class="planet" id="Urano" data-bs-toggle="modal" data-bs-target="#planetModal">
+          <img src="./img/urano.jpg" alt="Urano">
+          <div class="planet-name">Urano</div>
+        </div>
+        <div class="planet" id="Netuno" data-bs-toggle="modal" data-bs-target="#planetModal">
+          <img src="./img/netuno.avif" alt="Netuno">
+          <div class="planet-name">Netuno</div>
+        </div>
+        <div class="planet" id="kepler-186f" data-bs-toggle="modal" data-bs-target="#planetModal">
+          <img src="./img/Kepler-186f.jpg" alt="Kepler-186f">
+          <div class="planet-name">Kepler-186f</div>
+        </div>
+        <div class="planet" id="Osíris" data-bs-toggle="modal" data-bs-target="#planetModal">
+          <img src="./img/Osíris.jpeg" alt="Osíris">
+          <div class="planet-name">Osíris</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal fade" id="planetModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Planeta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="" alt="Planeta" class="planet-modal-img">
+          <h5>DESCRIÇÃO:</h5>
+          <p id="planetDescription"></p>
+          <h5>DETALHES:</h5>
+          <ul class="planet-details">
+            <li><strong>Distância do Sol:</strong> <span id="distanceFromSun">-</span></li>
+            <li><strong>Diâmetro:</strong> <span id="diameter">-</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="cyber-footer fixed-bottom">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-icon" data-tooltip="Facebook">
+                    <img src="./img/facebook.png" alt="Facebook">
+                </a>
+                <a href="#" class="social-icon" data-tooltip="LinkedIn">
+                    <img src="./img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="#" class="social-icon" data-tooltip="Instagram">
+                    <img src="./img/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" class="social-icon" data-tooltip="WhatsApp">
+                    <img src="./img/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+            <div class="copyright">
+                © 2024 DESTINY - O DESTINO FINAL | TODOS OS DIREITOS RESERVADOS
+            </div>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const planetData = {
+        'Mercúrio': {
+          description: "Mercúrio é o menor planeta do sistema solar e o mais próximo do Sol. Ele orbita em torno do Sol a uma distância média de cerca de 58 milhões de quilômetros e completa uma órbita a cada 88 dias terrestres. Como está tão perto do Sol, sua superfície pode atingir temperaturas extremamente altas durante o dia e, devido à falta de atmosfera significativa para reter calor, as temperaturas podem cair muito baixo durante a noite.",
+          distance: "58 milhões de km",
+          diameter: "4,880 km"
+        },
+        'Vênus': {
+          description: "Vênus é o segundo planeta do sistema solar a partir do Sol e é frequentemente chamado de irmão da Terra devido ao seu tamanho semelhante. Ele orbita o Sol a uma distância média de cerca de 108 milhões de quilômetros e completa uma órbita a cada 225 dias terrestres. Vênus é conhecido por sua atmosfera densa e tóxica composta principalmente de dióxido de carbono, com nuvens de ácido sulfúrico.",
+          distance: "108.2 milhões de km",
+          diameter: "12,104 km"
+        },
+        'Terra': {
+          description: "A Terra é o terceiro planeta do sistema solar, localizado a uma distância média de cerca de 150 milhões de quilômetros do Sol. É o único planeta conhecido por abrigar vida e possui uma atmosfera única composta principalmente de nitrogênio e oxigênio, proporcionando as condições ideais para a existência de uma variedade de formas de vida.",
+          distance: "150 milhões de km",
+          diameter: "12,742 km"
+        },
+        'Marte': {
+          description: "Marte é o quarto planeta do sistema solar, situado entre a Terra e o cinturão de asteroides. Seu diâmetro médio é de cerca de 6.779 quilômetros, aproximadamente a metade do diâmetro da Terra. É conhecido como o Planeta Vermelho devido à coloração avermelhada de sua superfície, causada principalmente pela presença de óxido de ferro, ou ferrugem.",
+          distance: "227,9 milhões de km",
+          diameter: "6,779 km"
+        },
+        'Júpiter': {
+          description: "Júpiter é o quinto planeta do sistema solar e o maior de todos, tanto em tamanho quanto em massa. Ele é um gigante gasoso composto principalmente de hidrogênio e hélio. Júpiter orbita o Sol a uma distância média de cerca de 778 milhões de quilômetros, o que equivale a aproximadamente 5,2 unidades astronômicas (UA), e completa uma órbita a cada 11,9 anos terrestres.",
+          distance: "778 milhões de km",
+          diameter: "139,822 km"
+        },
+        'Saturno': {
+          description: "Saturno é o sexto planeta do sistema solar, conhecido por seus impressionantes anéis. É um gigante gasoso, composto principalmente de hidrogênio e hélio, e orbita o Sol a uma distância média de cerca de 1,4 bilhão de quilômetros, o que equivale a aproximadamente 9,5 unidades astronômicas (UA).",
+          distance: "1,4 bilhão de km",
+          diameter: "116,460 km"
+        },
+        'Urano': {
+          description: "Urano é o sétimo planeta do sistema solar e é um gigante gasoso composto principalmente de hidrogênio e hélio, com pequenas quantidades de metano e outros gases. Ele orbita o Sol a uma distância média de cerca de 2,9 bilhões de quilômetros, aproximadamente 19,8 unidades astronômicas (UA), e completa uma órbita a cada 84 anos terrestres.",
+          distance: "2,9 bilhões de km",
+          diameter: "50,724 km"
+        },
+        'Netuno': {
+          description: "Netuno é o oitavo e último planeta do sistema solar, situado além de Urano. É um gigante gasoso, composto principalmente de hidrogênio, hélio e uma pequena quantidade de metano em sua atmosfera. Netuno orbita o Sol a uma distância média de cerca de 4,5 bilhões de quilômetros, aproximadamente 30,1 unidades astronômicas (UA), e completa uma órbita a cada 164,8 anos terrestres.",
+          distance: "4,5 bilhões de km",
+          diameter: "49,244 km"
+        },
+        'kepler-186f': {
+          description: "Kepler-186f é um exoplaneta localizado na constelação de Cygnus, a cerca de 500 anos-luz da Terra. Ele foi descoberto pelo telescópio espacial Kepler em 2014 e é notável por ser o primeiro exoplaneta do tamanho da Terra descoberto na zona habitável de sua estrela-mãe, o que significa que pode ter condições adequadas para a existência de água líquida e, potencialmente, para a vida como a conhecemos.",
+          distance: "500 anos-luz",
+          diameter: "1.1x Terra"
+        },
+        'Osíris': {
+          description: "HD 209458 b, também conhecido como Osíris, é um exoplaneta gasoso gigante que orbita a estrela HD 209458 na constelação de Pegasus, a cerca de 150 anos-luz da Terra. Foi o primeiro exoplaneta a ser detectado indiretamente através do método de trânsito, onde o planeta passa em frente à sua estrela, bloqueando parte da luz.",
+          distance: "150 anos-luz",
+          diameter: "1.35x Júpiter"
+        }
+      };
+
+      const planetModal = document.getElementById('planetModal');
+      planetModal.addEventListener('show.bs.modal', function(event) {
+        const button = event.relatedTarget;
+        const planetId = button.id;
+        const planet = planetData[planetId];
+        
+        const modalTitle = planetModal.querySelector('.modal-title');
+        modalTitle.textContent = planetId;
+        
+        const modalImg = planetModal.querySelector('.planet-modal-img');
+        modalImg.src = button.querySelector('img').src;
+        modalImg.alt = planetId;
+        
+        document.getElementById('planetDescription').textContent = planet.description;
+        document.getElementById('distanceFromSun').textContent = planet.distance;
+        document.getElementById('diameter').textContent = planet.diameter;
+      });
+
+      const planets = document.querySelectorAll('.planet');
+      planets.forEach(planet => {
+        planet.addEventListener('mouseenter', function() {
+          this.style.transform = 'scale(1.1) rotate(10deg)';
+        });
+        
+        planet.addEventListener('mouseleave', function() {
+          this.style.transform = 'scale(1)';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
